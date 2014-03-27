@@ -10,4 +10,6 @@ exports.startServer = (config, callback) ->
       'port', process.env.PORT or config.server.port
     @get '/', routes.index(config)
 
+    @io.set 'log level', 1
+
     callback @server, @io
