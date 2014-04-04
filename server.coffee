@@ -9,6 +9,7 @@ exports.startServer = (config, callback) ->
       'views': config.server.views.path
       'port', process.env.PORT or config.server.port
     @get '/', routes.index(config)
-    # not sure but seemed to read that you have to call @on to get access to @io
-    @on connection: ->
-    callback @app, @io
+
+    @io.set 'log level', 1
+
+    callback @server, @io
