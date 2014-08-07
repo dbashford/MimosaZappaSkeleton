@@ -12,9 +12,9 @@
   ],
   "private": true,
   "dependencies": {
-    "coffee-script": "1.6.3",
-    "consolidate": "0.9.1",
-    "jade": "0.34.1",
+    "coffee-script": "1.7.1",
+    "consolidate": "0.10.0",
+    "jade": "1.5.0",
     "zappajs": "0.4.22"
   }
 }
